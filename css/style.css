@@ -1,0 +1,84 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+	box-shadow: 1px 0px 10px black;
+
+}
+
+
+header{
+  /*background-color: #f4f4f4;
+  */
+	width: 100%;
+	padding: 23% 5%;
+	text-align: center;
+	margin-top: -60px;
+  background-image: url(https://static1.squarespace.com/static/5683e48cd82d5ec809a16efd/582a01bfe6f2e13993c8d5f8/582a0227c534a550aa06b089/1479151705916/iStock_83883261_LARGE.jpg?format=1500w);
+
+}
+
+
+section{
+	padding: 5%;
+
+}
+
+section h2{
+	margin-bottom: 5%;
+}
+
+
+footer{
+	background-color: #222;
+	color: #a3a3a3;
+	margin: 0;
+	padding: 2%;
+	height: 350px;
+	text-align: center;
+	font-size: 25px;
+}
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+
